@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.8565,
+  "epochs": 50,
+  "batch_size": 64,
+  "neurons_h1": 6,
+  "neurons_h2": 6,
+  "test_size": 0.2
+}
