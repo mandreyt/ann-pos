@@ -22,7 +22,7 @@ META_PATH  = os.path.join(MODEL_DIR, "meta.json")
 # ── Carregar artefatos (cache) ────────────────────────────────
 @st.cache_resource
 def load_artifacts():
-    ann = tf.keras.models.load_model(MODEL_PATH)
+    ann = tf.keras.models.load_model(MODEL_PATH, compile=False)
     with open(SC_PATH, 'rb') as f: sc = pickle.load(f)
     with open(CT_PATH, 'rb') as f: ct = pickle.load(f)
     with open(LE_PATH, 'rb') as f: le = pickle.load(f)
